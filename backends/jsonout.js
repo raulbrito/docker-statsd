@@ -45,6 +45,8 @@ JSONOutBackend.prototype.flush = function(timestamp, metrics) {
     pctThreshold: metrics.pctThreshold
   }, data = JSON.stringify(out), self = this;
 
+  console.log(data);
+
   fs.writeFile(this.config.output_temp, data, function(err) {
     if (!err) {
       fs.rename(self.config.output_temp,
