@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/supervisord
+/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
