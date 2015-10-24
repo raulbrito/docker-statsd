@@ -25,7 +25,7 @@ RUN git clone git://github.com/etsy/statsd.git /opt/statsd
 ADD assets/localConfig.js /opt/statsd/localConfig.js
 
 # supervisord
-ADD assets/supervisor-statsd.conf /etc/supervisor/conf.d/graphite.conf
+ADD assets/supervisor-statsd.conf /etc/supervisor/conf.d/supervisord.conf
 
 # start script
 ADD assets/start-statsd.sh /usr/bin/start-statsd.sh
