@@ -1,3 +1,3 @@
 {
-  backends: ['jsonout']
+  backends: ["./backends/jsonout']
 }
