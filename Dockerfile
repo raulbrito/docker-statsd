@@ -23,6 +23,7 @@ RUN apt-get -y -qq install supervisor
 # statsd
 RUN git clone git://github.com/etsy/statsd.git /opt/statsd
 ADD assets/localConfig.js /opt/statsd/localConfig.js
+ADD backends/jsonout.js /opt/statsd/backends/jsonout.js
 
 # supervisord
 ADD assets/supervisor-statsd.conf /etc/supervisor/conf.d/supervisord.conf
